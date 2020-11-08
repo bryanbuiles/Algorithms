@@ -7,12 +7,13 @@ def diagonalDifference(arr):
     contador2 = len(arr[0]) - 1
     sumleft = 0
     for array in arr:
-        for index in range(len(array) + 1):
+        for index in range(len(array)):
             if contador1 == index:
                 sumrigth += array[index]
         contador1 += 1
 
         for index in range(len(array) - 1, - 1, -1):
+            print(array[index])
             if contador2 == index:
                 sumleft += array[index]
         contador2 -= 1
