@@ -2,28 +2,22 @@
 
 
 def merge_ranges(meetings):
-
+    lista = []
     # Sort by start time
     sorted_meetings = sorted(meetings)
+    star = sorted_meetings[0][0]
+    end = sorted_meetings[0][1]
 
-    # Initialize merged_meetings with the earliSest meeting
-    merged_meetings = [sorted_meetings[0]]
-
-    for current_meeting_start, current_meeting_end in sorted_meetings[1:]:
-        last_merged_meeting_start, last_merged_meeting_end = merged_meetings[-1]
-
-        # If the current meeting overlaps with the last merged meeting, use the
-        # later end time of the two
-        if (current_meeting_start <= last_merged_meeting_end):
-            merged_meetings[-1] = (last_merged_meeting_start,
-                                   max(last_merged_meeting_end,
-                                       current_meeting_end))
-        else:
-            # Add the current meeting since it doesn't overlap
-            merged_meetings.append(
-                (current_meeting_start, current_meeting_end))
-
-    return merged_meetings
+    for current_star, current_end in sorted_meetings:
+        if current_star > end:
+            lista.append((star, end))
+            star = current_star
+            end = current_end
+        elif current_end >= end:
+            end = current_end
+    if (star, end) not in lista:
+        lista.append((star, end))
+    return lista
 
 
 print(merge_ranges([(2, 6), (3, 5), (7, 9), (1, 10)]))

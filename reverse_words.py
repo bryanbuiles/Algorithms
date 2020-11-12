@@ -2,27 +2,14 @@
 
 
 def reverse_words(message):
-    contador = 0
-    for index in range(len(message) - 1, - 1, - 1):
-        if contador >= index:
-            break
-        temp = message[contador]
-        message[contador] = message[index]
-        message[index] = temp
-        contador += 1
+    reverse(message, len(message), -1, 0)
     spaces = message.count(" ")
     temp2 = -1
     contador = 0
     temp1 = index1 = message.index(" ")
     for times in range(spaces + 1):
         contador_pala = temp1
-        for index in range(contador_pala - 1, temp2, - 1):
-            if contador >= index:
-                break
-            temp = message[contador]
-            message[contador] = message[index]
-            message[index] = temp
-            contador += 1
+        reverse(message, contador_pala, temp2, contador)
         temp2 = temp1
         if times + 1 >= spaces:
             temp1 = len(message)
@@ -32,6 +19,16 @@ def reverse_words(message):
             temp1 += index1 + 1
             contador = temp2 + 1
     return(message)
+
+
+def reverse(message, end_word, start_word, contador):
+    for index in range(end_word - 1, start_word, - 1):
+        if contador >= index:
+            break
+        temp = message[contador]
+        message[contador] = message[index]
+        message[index] = temp
+        contador += 1
 
 
 print(reverse_words(['c', 'a', 'k', 'e', ' ',
