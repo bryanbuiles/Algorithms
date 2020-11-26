@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
     Dadas las tres listas , escriba una función para verificar
-    que el servicio decafe sea por orden de llegada.
+    que el servicio de cafe sea por orden de llegada.
+
     Toda la comida debe salir en el mismo orden en que
     los clientes lo solicitaron (FIFO).
 """
