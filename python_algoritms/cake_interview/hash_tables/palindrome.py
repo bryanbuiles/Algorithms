@@ -31,7 +31,7 @@ def palindrome(string):
         return False
     return True
 
-# cake version
+# -----------------------------cake version----------------------
 
 
 def has_palindrome_permutation(the_string):

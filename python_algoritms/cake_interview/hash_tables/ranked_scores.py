@@ -8,14 +8,15 @@ import unittest
 
 
 def sort_scores(unsorted_scores, highest_possible_score):
-    count_score = [0] * (highest_possible_score + 1)
-    sorted_score = []
+    count_score = [0] * (highest_possible_score + 1) # se arma una lista donde los 
+                                                    #indices son los valores de la lista sin ordenar y los valores son cuantas veces se repite
+    sorted_score = []                                # el elemento
     for score in unsorted_scores:
-        count_score[score] += 1
+        count_score[score] += 1 # el numero de veces que esta el score en la lista
 
     for index in range(len(count_score) - 1, -1, -1):
-        contador = count_score[index]
-        for times in range(contador):
+        contador = count_score[index] # cuantas veces esta repetido el elemento
+        for times in range(contador): # loop que hace append dependiendo del numero de veces que esta el elemento
 
             sorted_score.append(index)
     return sorted_score

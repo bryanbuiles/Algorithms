@@ -5,6 +5,8 @@
     excepto que comienzan en algun lugar en el medio del alfabeto, llegan al final y
     luego comienzan desde el principio del alfabeto. En otras palabras,
     se trata de una lista ordenada alfabeticamente que se ha rotado.
+
+    Se uso binary search
 """
 
 import unittest

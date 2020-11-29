@@ -9,7 +9,7 @@
 
 import unittest
 
-
+# take_out_index = index de las ordenes de salida
 def cafe_order(served_orders, take_out_orders, dine_in_orders,
                served_index=0, take_out_index=0, diner_index=0):
 

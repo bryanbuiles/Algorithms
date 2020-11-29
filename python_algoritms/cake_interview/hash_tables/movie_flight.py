@@ -22,11 +22,10 @@ lista2 = [120, 133, 160, 150, 130, 152, 150]
 lista = [120, 133, 160, 142, 130, 152]
 flight = 300
 flight2 = 250
-# print(movie_flight(lista2, flight))
 
 print(movie_flight(lista, flight2))
 
-# version interview cake
+# ----------------------version interview cake---------------------------
 
 
 def movie_flight_cake(movie_lengths, flight_length):
