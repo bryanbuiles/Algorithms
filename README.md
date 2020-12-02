@@ -1,6 +1,6 @@
 # Algorithms
 
-This is a repository for personal training in algorithms and data strutures
+This is a repository for personal training in algorithms and data structures
 
 ## Algorithms and data structures
 
