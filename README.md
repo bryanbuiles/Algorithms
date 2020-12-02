@@ -1,11 +1,13 @@
 # Algorithms
 
-This is a repository for personal training in algorithms and data structures
+This is a repository where algorithms of different types are solved, including the use of some data structures.
 
-## Algorithms and data structures
+The algorithms are solved in python or go
 
-- arrays
-- gredy algorithms
-- hash tables
-- sorting and searching algorithms
+## Algorithms and data structures used
+
+- Arrays
+- Gredy algorithms
+- Hash tables
+- Sorting and searching algorithms
 - String manipulation
