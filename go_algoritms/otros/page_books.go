@@ -1,4 +1,4 @@
-package main
+package otros
 
 func pageCount(n int32, p int32) int32 {
 	var i, contador, numberPages int32 = 0, 0, 0

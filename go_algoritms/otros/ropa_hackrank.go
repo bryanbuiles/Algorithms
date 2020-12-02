@@ -2,7 +2,7 @@
 	Buscar cuantos pares de numeros de prendas del mismo color existen
 */
 
-package main
+package otros
 
 func sockMerchant(n int32, ar []int32) int32 {
 	dic := make(map[int32]int)

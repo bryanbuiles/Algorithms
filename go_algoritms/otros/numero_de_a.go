@@ -1,10 +1,11 @@
+package otros
+
 /*
 calcular el numero de letras "a"  hasta el indice n que se repiten en una string s = "abcac"
 que se repite infinitamente  ejemplo "abcacabcacabcacabcac"
 
 retornar el numero de veces que se repite la letra a hasta el indice n
 */
-package main
 
 func repeatedString(s string, n int64) int64 {
 	var numberWords, index, numberA, maxA, indexF int64

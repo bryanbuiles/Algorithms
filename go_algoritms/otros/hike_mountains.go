@@ -1,4 +1,4 @@
-package main
+package otros
 
 func countingValleys(steps int32, path string) int32 {
 	var contador, valleyCount int32

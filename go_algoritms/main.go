@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"go_algoritms/arrays"
+	"go_algoritms/otros"
 )
 
 func main() {
-	var num int32
-	num = 4
-	lista := []int32{1, 2, 3, 4, 5}
-	fmt.Println(arrays.RotLeft(lista, num))
+	var n, m, s int32 = 4, 6, 2
+
+	//fmt.Println(otros.SaveThePrisoner(n, m, s))
+	n, m, s = 6, 3, 6
+	fmt.Println(otros.SaveThePrisoner(n, m, s))
 }

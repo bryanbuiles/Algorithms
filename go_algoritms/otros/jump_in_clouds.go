@@ -1,4 +1,4 @@
-package main
+package otros
 
 func jumpingOnClouds(c []int32) int32 {
 	var contador, jump int32
