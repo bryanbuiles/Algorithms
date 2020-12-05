@@ -15,16 +15,17 @@ func JumpingOnClouds(c []int32, k int32) int32 {
 				energy -= 2
 			}
 		}
-		if index+k-len == 0 {
-			if c[0] == 1 {
-				energy -= 2
-			} else {
-				energy--
+		if index+k > len-1 {
+			if index+k-len == 0 {
+				if c[0] == 1 {
+					energy -= 2
+				} else {
+					energy--
+				}
+				return energy
 			}
-			return energy
+			index = index - len
 		}
-		index = index - len
-
 	}
 	return energy
 }
