@@ -1,5 +1,5 @@
 # https://www.hackerrank.com/challenges/queens-attack-2/problem
-# Queen's Attack II
+# Queen's Attack II no eficient
 
 def queensAttack(n, k, r_q, c_q, obstacles):
     lista = [r_q, c_q]
