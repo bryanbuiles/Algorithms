@@ -2,13 +2,12 @@ package main
 
 import (
 	"fmt"
-	"go_algoritms/otros"
+	hashtables "go_algoritms/hash_tables"
 )
 
 func main() {
-	var i, result int32 = 24, 49
-	//fmt.Println(otros.Squares(i, result))
-	i = 100
-	result = 1000
-	fmt.Println(otros.Squares(i, result))
+	str := "feedthedog"
+	str = "haveaniceday"
+	//str = "iffactsdontfittotheorychangethefacts"
+	fmt.Println(hashtables.Encryption(str))
 }
