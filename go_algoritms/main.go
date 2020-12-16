@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	str := "feedthedog"
-	str = "haveaniceday"
+	str1 := "hello"
+	str2 := "world"
 	//str = "iffactsdontfittotheorychangethefacts"
-	fmt.Println(hashtables.Encryption(str))
+	fmt.Println(hashtables.TwoStrings(str1, str2))
 }
