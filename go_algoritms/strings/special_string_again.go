@@ -1,23 +1,20 @@
-package main
+/*
+	Special String Again
+	link: https://www.hackerrank.com/challenges/special-palindrome-again/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+	Fin de number of special substring if
+	1) All of the characters are the same, e.g. aaa
+	2) All characters except the middle one are the same, e.g. aadaa.
+*/
 
-import (
-	"fmt"
-)
+package stringmanipulation
 
 type letter struct {
 	string
 	int64
 }
 
-func main() {
-	//str1 := "abcdefghhgfedecba"
-	var n int32 = 7
-	s := "abcbaba"
-	n = 4
-	s = "aaaa"
-	fmt.Println(substrCount(n, s))
-}
-func substrCount(n int32, s string) int64 {
+// SubstrCount ...
+func SubstrCount(n int32, s string) int64 {
 
 	var letters letter
 	var listLetters []letter

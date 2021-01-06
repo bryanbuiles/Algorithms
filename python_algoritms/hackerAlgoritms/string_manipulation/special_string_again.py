@@ -1,5 +1,7 @@
 #!/bin/python3
 
+# ineficiente en time complexity
+
 def substrCount(n, s):
     lista_letters = []
     contador = flag = contadorint = 0
@@ -11,12 +13,16 @@ def substrCount(n, s):
             for index in range(lenStrings):
                 if lenStrings % 2 == 0 and lista_letters[0] != lista_letters[index]:
                     flag = 1
+                    break
                 if lenStrings % 2 != 0:
-                    if lista_letters[lenStrings//2] != lista_letters[0] and lista_letters[0] == lista_letters[index]:
-                        flag = 1
-                        contadorint += 1
-                    if lista_letters[0] != lista_letters[index]:
-                        flag = 1
+                    if lista_letters[lenStrings//2] != lista_letters[0]:
+                        if lista_letters[0] == lista_letters[index]:
+                            flag = 1
+                            contadorint += 1
+                    else:
+                        if lista_letters[0] != lista_letters[index]:
+                            flag = 1
+                            break
 
             if flag == 0 or contadorint == (lenStrings - 1):
                 contador += 1
