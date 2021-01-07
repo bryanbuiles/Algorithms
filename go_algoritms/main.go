@@ -4,10 +4,6 @@ import (
 	"fmt"
 )
 
-type letter struct {
-	string
-	int64
-}
 
 func main() {
 	//str1 := "abcdefghhgfedecba"
@@ -16,6 +12,10 @@ func main() {
 	n = 4
 	s = "aaaa"
 	fmt.Println(substrCount(n, s))
+}
+type letter struct {
+	string
+	int64
 }
 func substrCount(n int32, s string) int64 {
 
