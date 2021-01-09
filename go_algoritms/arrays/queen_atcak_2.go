@@ -1,14 +1,10 @@
-package main
+/*
+# https://www.hackerrank.com/challenges/queens-attack-2/problem
+# Queen's Attack II no eficient
+Hallar el numero de posiciones que puede estar la reina
+*/
 
-import (
-	"fmt"
-)
-
-func main() {
-	array := [][]int32{{5, 5}, {4, 2}, {2, 3}}
-	fmt.Println(queensAttack(5, 3, 4, 3, array))
-
-}
+package arrays
 
 func queensAttack(n int32, k int32, r_q int32, c_q int32, obstacles [][]int32) int32 {
 	ostaclesMap := make(map[[2]int32]string)
