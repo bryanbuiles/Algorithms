@@ -1,23 +1,4 @@
-/*
-# https://www.hackerrank.com/challenges/queens-attack-2/problem
-# Queen's Attack II no eficient
-Hallar el numero de posiciones que puede estar la reina
-*/
-
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	var k int32
-	array := []int32{1, 3, 5, 7, 9, 2}
-	k = 3
-	//array = []int32{1, 1, 1, 2, 2}
-	fmt.Println(getMinimumCost(k, array))
-
-}
+package gredyalgoritm
 
 func mergeSort(arr []int32) {
 
