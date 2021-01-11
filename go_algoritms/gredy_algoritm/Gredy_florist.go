@@ -1,3 +1,9 @@
+/*
+Greedy Florist
+https://www.hackerrank.com/challenges/greedy-florist/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms
+Menor precio para comprar un numero n de flores
+*/
+
 package gredyalgoritm
 
 func mergeSort(arr []int32) {
