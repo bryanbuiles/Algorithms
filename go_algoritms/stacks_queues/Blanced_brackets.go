@@ -1,20 +1,11 @@
 /*
-# https://www.hackerrank.com/challenges/queens-attack-2/problem
-# Queen's Attack II no eficient
-Hallar el numero de posiciones que puede estar la reina
+Balanced Brackets
+https://www.hackerrank.com/challenges/balanced-brackets/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues
+Mirarsi los brackets estan balancados de acuerdo a su scope y frecuencia
+A bracket is considered to be any one of the following characters: (, ), {, }, [, or ].
 */
 
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	s := "[{"
-	fmt.Println(isBalanced(s))
-
-}
+package stacksqueues
 
 func isBalanced(s string) string {
 	hasMap := map[rune]int{'(': 0, '[': 0, '{': 0}
@@ -47,5 +38,3 @@ func isBalanced(s string) string {
 	}
 	return "NO"
 }
-
-// fmt.Printf("%c, %c\n", s[index], s[lenS-contador])

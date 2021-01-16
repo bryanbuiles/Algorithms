@@ -42,3 +42,29 @@ func luckBalance(k int32, contests [][]int32) int32 {
 	}
 	return sumTotal
 }
+
+func isBalanced(s string) string {
+	lenS := len(s)
+	midLen := (lenS / 2) - 1
+	contador := 1
+	var n byte
+	if lenS%2 != 0 {
+		return "NO"
+	}
+	for index := range s {
+		if s[index] == '(' {
+			n = 1
+		} else {
+			n = 2
+		}
+
+		if s[index] != s[lenS-contador]-n {
+			return "NO"
+		}
+		if index == midLen {
+			break
+		}
+		contador++
+	}
+	return "YES"
+}
